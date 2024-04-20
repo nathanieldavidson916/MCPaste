@@ -15,7 +15,6 @@ CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef
         int64_t clickCount = CGEventGetIntegerValueField(event, kCGMouseEventClickState);
         int64_t buttonNumber = CGEventGetIntegerValueField(event, kCGMouseEventButtonNumber);
         if (buttonNumber == MIDDLE_MOUSE) { // Middle mouse button
-            NSLog(@"Middle mouse button clicked %lld times.", clickCount);
             NSString *appleScriptCommand = @"tell application \"System Events\" to keystroke \"v\" using command down";
             NSAppleScript *script = [[NSAppleScript alloc] initWithSource:appleScriptCommand];
             NSDictionary *errorDict;
@@ -55,7 +54,7 @@ int main(int argc, const char * argv[]) {
             sleep(TIME_DELAY_SEC);
         }
         
-        NSLog(@"application has access");
+        NSLog(@"application is running");
 
         CFRunLoopRun();
     }
