@@ -14,8 +14,11 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    self.statusItem.button.title = @"🛠️";
     
+    // set the status bar buttons icone
+    NSImage *iconImage = [NSImage imageNamed:@"StatusBarIcon"];
+    self.statusItem.button.image = iconImage;
+    self.statusItem.button.imageScaling = NSImageScaleProportionallyDown;
     self.menu = [[NSMenu alloc] init];
     
     // setup menu buttons

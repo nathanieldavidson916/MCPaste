@@ -18,14 +18,16 @@ CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef
     if (type == kCGEventOtherMouseDown) {
         int64_t buttonNumber = CGEventGetIntegerValueField(event, kCGMouseEventButtonNumber);
         if (buttonNumber == MIDDLE_MOUSE) { // Middle mouse button
-            NSString *appleScriptCommand = @"tell application \"System Events\" to keystroke \"v\" using command down";
-            NSAppleScript *script = [[NSAppleScript alloc] initWithSource:appleScriptCommand];
-            NSDictionary *errorDict;
-            [script executeAndReturnError:&errorDict];
-            if (errorDict) {
-                NSLog(@"Error: %@", errorDict);
-                NSLog(@"Please enable automation permissions for this app in System Preferences > Security & Privacy > Privacy > Automation.");
-            }
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                NSString *appleScriptCommand = @"tell application \"System Events\" to keystroke \"v\" using command down";
+                NSAppleScript *script = [[NSAppleScript alloc] initWithSource:appleScriptCommand];
+                NSDictionary *errorDict;
+                [script executeAndReturnError:&errorDict];
+                if (errorDict) {
+                    NSLog(@"Error: %@", errorDict);
+                    NSLog(@"Please enable automation permissions for this app in System Preferences > Security & Privacy > Privacy > Automation.");
+                }
+            });
         }
     }
     return event;
