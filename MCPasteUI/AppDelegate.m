@@ -16,15 +16,22 @@
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.button.title = @"🛠️";
     
-    // default to starting the event listener
-    [self startMiddleMouseEventListener];
-
     self.menu = [[NSMenu alloc] init];
-    [self.menu addItemWithTitle:@"Start" action:@selector(startMiddleMouseEventListener) keyEquivalent:@""];
-    [self.menu addItemWithTitle:@"Stop" action:@selector(stopMiddleMouseEventListener) keyEquivalent:@""];
+    
+    // setup menu buttons
+    self.startMenuItem = [[NSMenuItem alloc] initWithTitle:@"Start" action:@selector(startMiddleMouseEventListener) keyEquivalent:@""];
+    [self.menu addItem:self.startMenuItem];
+    
+    self.stopMenuItem = [[NSMenuItem alloc] initWithTitle:@"Stop" action:@selector(stopMiddleMouseEventListener) keyEquivalent:@""];
+    
+    [self.menu addItem:self.stopMenuItem];
+    
     [self.menu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@""];
 
     self.statusItem.menu = self.menu;
+    
+    // default to starting the event listener
+    [self startMiddleMouseEventListener];
 }
 
 - (void) checkStatus {
@@ -47,10 +54,14 @@
                                                        selector:@selector(checkStatus)
                                                        userInfo:nil
                                                         repeats:YES];
+    [self.stopMenuItem setHidden:NO];
+    [self.startMenuItem setHidden:YES];
 }
 
 -(void) stopMiddleMouseEventListener {
     disableEventListener();
+    [self.stopMenuItem setHidden:YES];
+    [self.startMenuItem setHidden:NO];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

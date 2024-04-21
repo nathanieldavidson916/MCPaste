@@ -10,6 +10,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
     @property (strong, nonatomic) NSStatusItem *statusItem;
     @property (strong, nonatomic) NSMenu *menu;
+    @property (strong, nonatomic) NSMenuItem *startMenuItem;
+    @property (strong, nonatomic) NSMenuItem *stopMenuItem;
     @property (strong, nonatomic) NSTimer *pollingTimer;
 @end
-
