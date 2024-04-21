@@ -7,9 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980951282BD5576C00DFD7F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 980951272BD5576C00DFD7F5 /* AppDelegate.m */; };
+		9809512B2BD5576C00DFD7F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9809512A2BD5576C00DFD7F5 /* ViewController.m */; };
+		9809512D2BD5576D00DFD7F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9809512C2BD5576D00DFD7F5 /* Assets.xcassets */; };
+		980951302BD5576D00DFD7F5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9809512F2BD5576D00DFD7F5 /* Base */; };
+		980951322BD5576D00DFD7F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 980951312BD5576D00DFD7F5 /* main.m */; };
+		9809513D2BD5576D00DFD7F5 /* MCPasteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9809513C2BD5576D00DFD7F5 /* MCPasteUITests.m */; };
+		980951472BD5576E00DFD7F5 /* MCPasteUIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 980951462BD5576E00DFD7F5 /* MCPasteUIUITests.m */; };
+		980951492BD5576E00DFD7F5 /* MCPasteUIUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 980951482BD5576E00DFD7F5 /* MCPasteUIUITestsLaunchTests.m */; };
 		982F98A12BD441F700E0040A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 982F98A02BD441F700E0040A /* main.m */; };
 		982F98A92BD443BB00E0040A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982F98A82BD443BB00E0040A /* AppKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		980951392BD5576D00DFD7F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 982F98952BD441F700E0040A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 980951232BD5576C00DFD7F5;
+			remoteInfo = MCPasteUI;
+		};
+		980951432BD5576E00DFD7F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 982F98952BD441F700E0040A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 980951232BD5576C00DFD7F5;
+			remoteInfo = MCPasteUI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		982F989B2BD441F700E0040A /* CopyFiles */ = {
@@ -24,12 +49,48 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		980951242BD5576C00DFD7F5 /* MCPasteUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCPasteUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		980951262BD5576C00DFD7F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		980951272BD5576C00DFD7F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		980951292BD5576C00DFD7F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9809512A2BD5576C00DFD7F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9809512C2BD5576D00DFD7F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9809512F2BD5576D00DFD7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		980951312BD5576D00DFD7F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		980951332BD5576D00DFD7F5 /* MCPasteUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MCPasteUI.entitlements; sourceTree = "<group>"; };
+		980951382BD5576D00DFD7F5 /* MCPasteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCPasteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9809513C2BD5576D00DFD7F5 /* MCPasteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCPasteUITests.m; sourceTree = "<group>"; };
+		980951422BD5576D00DFD7F5 /* MCPasteUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCPasteUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		980951462BD5576E00DFD7F5 /* MCPasteUIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCPasteUIUITests.m; sourceTree = "<group>"; };
+		980951482BD5576E00DFD7F5 /* MCPasteUIUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCPasteUIUITestsLaunchTests.m; sourceTree = "<group>"; };
 		982F989D2BD441F700E0040A /* MCPaste */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MCPaste; sourceTree = BUILT_PRODUCTS_DIR; };
 		982F98A02BD441F700E0040A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		982F98A82BD443BB00E0040A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		98F4B59A2BD57EFC0069372C /* MCPaste.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCPaste.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		980951212BD5576C00DFD7F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		980951352BD5576D00DFD7F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9809513F2BD5576D00DFD7F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		982F989A2BD441F700E0040A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +102,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		980951252BD5576C00DFD7F5 /* MCPasteUI */ = {
+			isa = PBXGroup;
+			children = (
+				980951262BD5576C00DFD7F5 /* AppDelegate.h */,
+				980951272BD5576C00DFD7F5 /* AppDelegate.m */,
+				980951292BD5576C00DFD7F5 /* ViewController.h */,
+				9809512A2BD5576C00DFD7F5 /* ViewController.m */,
+				9809512C2BD5576D00DFD7F5 /* Assets.xcassets */,
+				9809512E2BD5576D00DFD7F5 /* Main.storyboard */,
+				980951312BD5576D00DFD7F5 /* main.m */,
+				980951332BD5576D00DFD7F5 /* MCPasteUI.entitlements */,
+			);
+			path = MCPasteUI;
+			sourceTree = "<group>";
+		};
+		9809513B2BD5576D00DFD7F5 /* MCPasteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9809513C2BD5576D00DFD7F5 /* MCPasteUITests.m */,
+			);
+			path = MCPasteUITests;
+			sourceTree = "<group>";
+		};
+		980951452BD5576E00DFD7F5 /* MCPasteUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				980951462BD5576E00DFD7F5 /* MCPasteUIUITests.m */,
+				980951482BD5576E00DFD7F5 /* MCPasteUIUITestsLaunchTests.m */,
+			);
+			path = MCPasteUIUITests;
+			sourceTree = "<group>";
+		};
 		982F98942BD441F700E0040A = {
 			isa = PBXGroup;
 			children = (
 				982F989F2BD441F700E0040A /* MCPaste */,
+				980951252BD5576C00DFD7F5 /* MCPasteUI */,
+				9809513B2BD5576D00DFD7F5 /* MCPasteUITests */,
+				980951452BD5576E00DFD7F5 /* MCPasteUIUITests */,
 				982F989E2BD441F700E0040A /* Products */,
 				982F98A72BD443BB00E0040A /* Frameworks */,
 			);
@@ -54,6 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				982F989D2BD441F700E0040A /* MCPaste */,
+				980951242BD5576C00DFD7F5 /* MCPasteUI.app */,
+				980951382BD5576D00DFD7F5 /* MCPasteUITests.xctest */,
+				980951422BD5576D00DFD7F5 /* MCPasteUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				982F98A02BD441F700E0040A /* main.m */,
+				98F4B59A2BD57EFC0069372C /* MCPaste.h */,
 			);
 			path = MCPaste;
 			sourceTree = "<group>";
@@ -77,6 +177,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		980951232BD5576C00DFD7F5 /* MCPasteUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 980951502BD5576E00DFD7F5 /* Build configuration list for PBXNativeTarget "MCPasteUI" */;
+			buildPhases = (
+				980951202BD5576C00DFD7F5 /* Sources */,
+				980951212BD5576C00DFD7F5 /* Frameworks */,
+				980951222BD5576C00DFD7F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCPasteUI;
+			productName = MCPasteUI;
+			productReference = 980951242BD5576C00DFD7F5 /* MCPasteUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		980951372BD5576D00DFD7F5 /* MCPasteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 980951512BD5576E00DFD7F5 /* Build configuration list for PBXNativeTarget "MCPasteUITests" */;
+			buildPhases = (
+				980951342BD5576D00DFD7F5 /* Sources */,
+				980951352BD5576D00DFD7F5 /* Frameworks */,
+				980951362BD5576D00DFD7F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9809513A2BD5576D00DFD7F5 /* PBXTargetDependency */,
+			);
+			name = MCPasteUITests;
+			productName = MCPasteUITests;
+			productReference = 980951382BD5576D00DFD7F5 /* MCPasteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		980951412BD5576D00DFD7F5 /* MCPasteUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 980951522BD5576E00DFD7F5 /* Build configuration list for PBXNativeTarget "MCPasteUIUITests" */;
+			buildPhases = (
+				9809513E2BD5576D00DFD7F5 /* Sources */,
+				9809513F2BD5576D00DFD7F5 /* Frameworks */,
+				980951402BD5576D00DFD7F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				980951442BD5576E00DFD7F5 /* PBXTargetDependency */,
+			);
+			name = MCPasteUIUITests;
+			productName = MCPasteUIUITests;
+			productReference = 980951422BD5576D00DFD7F5 /* MCPasteUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		982F989C2BD441F700E0040A /* MCPaste */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 982F98A42BD441F700E0040A /* Build configuration list for PBXNativeTarget "MCPaste" */;
@@ -103,6 +256,17 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					980951232BD5576C00DFD7F5 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					980951372BD5576D00DFD7F5 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 980951232BD5576C00DFD7F5;
+					};
+					980951412BD5576D00DFD7F5 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 980951232BD5576C00DFD7F5;
+					};
 					982F989C2BD441F700E0040A = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -122,11 +286,67 @@
 			projectRoot = "";
 			targets = (
 				982F989C2BD441F700E0040A /* MCPaste */,
+				980951232BD5576C00DFD7F5 /* MCPasteUI */,
+				980951372BD5576D00DFD7F5 /* MCPasteUITests */,
+				980951412BD5576D00DFD7F5 /* MCPasteUIUITests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		980951222BD5576C00DFD7F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9809512D2BD5576D00DFD7F5 /* Assets.xcassets in Resources */,
+				980951302BD5576D00DFD7F5 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		980951362BD5576D00DFD7F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		980951402BD5576D00DFD7F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		980951202BD5576C00DFD7F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9809512B2BD5576C00DFD7F5 /* ViewController.m in Sources */,
+				980951322BD5576D00DFD7F5 /* main.m in Sources */,
+				980951282BD5576C00DFD7F5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		980951342BD5576D00DFD7F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9809513D2BD5576D00DFD7F5 /* MCPasteUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9809513E2BD5576D00DFD7F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				980951492BD5576E00DFD7F5 /* MCPasteUIUITestsLaunchTests.m in Sources */,
+				980951472BD5576E00DFD7F5 /* MCPasteUIUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		982F98992BD441F700E0040A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,7 +357,151 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9809513A2BD5576D00DFD7F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 980951232BD5576C00DFD7F5 /* MCPasteUI */;
+			targetProxy = 980951392BD5576D00DFD7F5 /* PBXContainerItemProxy */;
+		};
+		980951442BD5576E00DFD7F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 980951232BD5576C00DFD7F5 /* MCPasteUI */;
+			targetProxy = 980951432BD5576E00DFD7F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9809512E2BD5576D00DFD7F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9809512F2BD5576D00DFD7F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		9809514A2BD5576E00DFD7F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MCPasteUI/MCPasteUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83CS586U23;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Apple events for this app need to be enabled in order to paste the contents of your clipboard into editable fields";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nathan-davidson.MCPasteUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		9809514B2BD5576E00DFD7F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MCPasteUI/MCPasteUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83CS586U23;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Apple events for this app need to be enabled in order to paste the contents of your clipboard into editable fields";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nathan-davidson.MCPasteUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		9809514C2BD5576E00DFD7F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83CS586U23;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nathan-davidson.MCPasteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCPasteUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MCPasteUI";
+			};
+			name = Debug;
+		};
+		9809514D2BD5576E00DFD7F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83CS586U23;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nathan-davidson.MCPasteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCPasteUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MCPasteUI";
+			};
+			name = Release;
+		};
+		9809514E2BD5576E00DFD7F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83CS586U23;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nathan-davidson.MCPasteUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = MCPasteUI;
+			};
+			name = Debug;
+		};
+		9809514F2BD5576E00DFD7F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83CS586U23;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nathan-davidson.MCPasteUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = MCPasteUI;
+			};
+			name = Release;
+		};
 		982F98A22BD441F700E0040A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,6 +613,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -279,6 +644,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		980951502BD5576E00DFD7F5 /* Build configuration list for PBXNativeTarget "MCPasteUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9809514A2BD5576E00DFD7F5 /* Debug */,
+				9809514B2BD5576E00DFD7F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		980951512BD5576E00DFD7F5 /* Build configuration list for PBXNativeTarget "MCPasteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9809514C2BD5576E00DFD7F5 /* Debug */,
+				9809514D2BD5576E00DFD7F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		980951522BD5576E00DFD7F5 /* Build configuration list for PBXNativeTarget "MCPasteUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9809514E2BD5576E00DFD7F5 /* Debug */,
+				9809514F2BD5576E00DFD7F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		982F98982BD441F700E0040A /* Build configuration list for PBXProject "MCPaste" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
